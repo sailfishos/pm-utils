@@ -1,0 +1,52 @@
+* Mon Dec 19 2011 Marko Saukko <marko.saukko@cybercom.com> - 1.4.1
+- Fixes MER#65: upower needs pm-utils package.
+- Removed usermode dep as there is no calls to those binaries in pm-utils
+- Removed pciutils >= 2.2.1 dep as no calls to lspci, setpci or update-pciids is done.
+- Dropped not included files: pm-utils-99hd-apm-restore, pm-utils-hd-apm-restore.conf
+
+* Mon Jun 06 2011 Anas Nashif <anas.nashif@intel.com> - 1.4.1
+- Update to 1.4.1
+
+* Thu Mar 03 2011 Neo Fang <neo.fang@intel.com> - 1.3.1
+- Fix BMC#13941: Add 10-umount-SD script to umount sd card before suspend.
+
+* Mon Oct 18 2010 Yan Yin <yan.yin@intel.com> - 1.3.1
+- Fix BMC#3932: Rename fix-bmc-#3932.patch to dell-1012-s3-resume-failure-workaround.patch
+
+* Wed Oct 13 2010 Yan Yin <yan.yin@intel.com> - 1.3.1
+- Fix BMC#3932: Failed to resume from S3 sometimes on dellmini1012
+
+* Tue Jul 13 2010 Yan Yin <yan.yin@intel.com> - 1.3.1
+- Update to latest 1.3.1.
+
+* Thu Jun 24 2010 Yan Li <yan.i.li@intel.com> 1.3.0
+- Remove the dependency of kbd
+
+* Thu Mar 24 2010 Yu <yu.a.wang@linux.intel.com> 1.3.0
+- Update to latest 1.3.0.
+
+* Tue Mar 23 2010 Arjan van de Ven <arjan@linux.intel.com> 1.3.0_rc3
+- don't ship the sched powersave script; we don't want to have that one.
+
+* Sun Sep 06 2009 Peter Zhu <peter.j.zhu@intel.com> 1.3.0_rc3
+- Update to latest 1.3.0_rc3
+- Maintain video quirks rather than dependend on hal-info
+
+* Sun Sep 06 2009 Peter Zhu <peter.j.zhu@intel.com> 1.2.5
+- Update to latest 1.2.5
+
+* Wed May 06 2009 Arjan van de Ven <arjan@linux.intel.com> 1.2.3
+- make sure to not touch the APM settings of the disk; the BIOS should do this.
+
+* Wed 18 Feb 2009 Passion Zhao <passion.zhao@intel.com>
+- Modify the /etc/security/console.apps/pm-[suspend/powersave/hibernate] to fix the bug #796
+
+* Wed Dec 10 2008 Arjan van de Ven <arjan@linux.intel.com> 1.2.3
+- Upgrade to version 1.2.3
+
+* Fri Sep 05 2008 Peng Li <peng.li@intel.com> 1.1.0
+- remove dependency on vbetool
+
+* Wed Aug 13 2008 Zhang Xin <xing.z.zhang@intel.com>
+- updating branding info
+
