@@ -27,8 +27,8 @@ Source23: pm-utils-bugreport-info.sh
 Patch0  : dell-1012-s3-resume-failure-workaround.patch
 Patch1  : pm-utils-10umount-SD.patch
 
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-
+# touch is in coreutils
+Requires(post): coreutils
 
 %description
 The pm-utils package contains utilities and scripts useful for tasks related
@@ -86,10 +86,6 @@ pushd $RPM_BUILD_ROOT/%{_libdir}/pm-utils/
 tar xzfv video-quirks.tar.gz
 popd
 rm -f $RPM_BUILD_ROOT/%{_libdir}/pm-utils/video-quirks.tar.gz
-
-%clean
-%{__rm} -rf $RPM_BUILD_ROOT
-
 
 %pre
 if [ -f %{_sysconfdir}/sysconfig/pm ]; then

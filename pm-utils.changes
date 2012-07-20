@@ -1,3 +1,6 @@
+* Fri Jul 20 2012 Marko Saukko <marko.saukko@jollamobile.com> - 1.4.1
+- Requires(post) needs touch (coreutils)
+
 * Mon Dec 19 2011 Marko Saukko <marko.saukko@cybercom.com> - 1.4.1
 - Fixes MER#65: upower needs pm-utils package.
 - Removed usermode dep as there is no calls to those binaries in pm-utils
